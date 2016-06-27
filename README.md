@@ -6,6 +6,8 @@
 ## Version
 SdkVersion >= 19
 
+[![](https://jitpack.io/v/Idtk/SmallChart.svg)](https://jitpack.io/#Idtk/SmallChart)
+
 ## Chart types
 * Curve Chart(fill)
 
@@ -39,6 +41,45 @@ SdkVersion >= 19
 * 扇形图提供了触控交互效果。
 
 ## Usage
+
+### Gradle
+* Step 1. Add the JitPack repository to your build file
+```
+    allprojects {
+		repositories {
+			...
+			maven { url "https://jitpack.io" }
+		}
+	}
+```
+* Step 2. Add SmallChart
+
+```
+    dependencies {
+	        compile 'com.github.Idtk:SmallChart:v0.1.0'
+	}
+```
+
+### Maven
+* Step 1. Add the JitPack repository to your build file
+```
+    <repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+```
+
+* Step 2. Add SmallChart
+```
+    <dependency>
+	    <groupId>com.github.Idtk</groupId>
+	    <artifactId>SmallChart</artifactId>
+	    <version>v0.1.0</version>
+	</dependency>
+```
+
 以组合图表为例
 ### XML
 ```XML
