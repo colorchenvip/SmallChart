@@ -3,8 +3,6 @@ package com.idtk.smallchart.chart;
 import android.animation.ValueAnimator;
 import android.content.Context;
 import android.graphics.Canvas;
-import android.graphics.Paint;
-import android.graphics.Path;
 import android.graphics.RectF;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
@@ -48,13 +46,6 @@ public class PieChart extends PieRadarChart<IPieData> implements IPieChart{
     public boolean isAnimated = true,isTouch = true;
 
     private int angleId = -1;
-    private Paint mPaint = new Paint();
-    //引入Path
-    private Path outPath = new Path();
-    private Path midPath = new Path();
-    private Path inPath = new Path();
-    private Path outMidPath = new Path();
-    private Path midInPath = new Path();
 
     public PieChart(Context context) {
         super(context);
@@ -156,6 +147,11 @@ public class PieChart extends PieRadarChart<IPieData> implements IPieChart{
         }
         canvas.restore();
 
+        for (ChartRender chartRender : chartRenderList){
+            PieChartRender pieChartRender = (PieChartRender)chartRender;
+            pieChartRender.drawGraphText(canvas,animatedValue);
+        }
+
     }
 
     @Override
@@ -187,7 +183,6 @@ public class PieChart extends PieRadarChart<IPieData> implements IPieChart{
                     }
                     return true;
                 case MotionEvent.ACTION_UP:
-//                    angleId = -1;
                     PieChartRender pieChartRender = (PieChartRender)chartRenderList.get(angleId);
                     pieChartRender.setTouchFlag(false);
                     invalidate();

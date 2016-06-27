@@ -45,8 +45,8 @@ public class LineChartFragment extends BaseFragment {
         }
         mLineData.setValue(mPointArrayList);
         mLineData.setColor(Color.MAGENTA);
-        mLineData.setPaintWidth(5);
-        mLineData.setTextSize(30);
+        mLineData.setPaintWidth(pxTodp(3));
+        mLineData.setTextSize(pxTodp(10));
         mDataList.add(mLineData);
     }
 }

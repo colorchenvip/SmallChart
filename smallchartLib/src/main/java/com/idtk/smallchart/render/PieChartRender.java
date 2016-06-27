@@ -44,6 +44,7 @@ public class PieChartRender extends ChartRender implements TouchListener{
         paintText.setTextSize(pieAxisData.getTextSize());
         paintText.setTextAlign(Paint.Align.CENTER);
         paintText.setStrokeWidth(pieAxisData.getPaintWidth());
+
         numberFormat =NumberFormat.getPercentInstance();
         numberFormat.setMinimumFractionDigits(pieAxisData.getDecimalPlaces());
     }
@@ -69,7 +70,7 @@ public class PieChartRender extends ChartRender implements TouchListener{
         /**
          * 绘制文字
          */
-        canvas.save();
+        /*canvas.save();
         canvas.rotate(-pieAxisData.getStartAngle());
         //根据Paint的TextSize计算Y轴的值
         if (pieAxisData.getIsTextSize()&&animatedValue>pieData.getCurrentAngle()-pieData.getAngle()/2) {
@@ -81,7 +82,19 @@ public class PieChartRender extends ChartRender implements TouchListener{
                 }
             }
         }
-        canvas.restore();
+        canvas.restore();*/
+    }
+
+    public void drawGraphText(Canvas canvas, float animatedValue){
+        if (pieAxisData.getIsTextSize()&&animatedValue>pieData.getCurrentAngle()+pieData.getAngle()/2) {
+            if (touchFlag) {
+                drawText(canvas,pieData,pieData.getCurrentAngle()+pieAxisData.getStartAngle(),numberFormat,true);
+            } else {
+                if (pieData.getAngle() > pieAxisData.getMinAngle()) {
+                    drawText(canvas,pieData,pieData.getCurrentAngle()+pieAxisData.getStartAngle(),numberFormat,false);
+                }
+            }
+        }
     }
 
     private void drawArc(Canvas canvas, float currentStartAngle, float drawAngle, IPieData pie,

@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SmallChartExample.iml" filepath="$PROJECT_DIR$/SmallChartExample.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/smallchartLib/smallchart.iml" filepath="$PROJECT_DIR$/smallchartLib/smallchart.iml" />
       <module fileurl="file://$PROJECT_DIR$/smallchartLib/smallchartLib.iml" filepath="$PROJECT_DIR$/smallchartLib/smallchartLib.iml" />
     </modules>
   </component>

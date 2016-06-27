@@ -36,6 +36,8 @@ public class BarChartFragment extends BaseFragment{
         initData();
 //        barChart.setData(mBarData);
         barChart.setDataList(mDataList);
+        barChart.setXAxisUnit("X单位");
+        barChart.setYAxisUnit("Y单位");
         return view;
     }
 
@@ -45,8 +47,8 @@ public class BarChartFragment extends BaseFragment{
         }
         mBarData.setValue(mPointArrayList);
         mBarData.setColor(Color.CYAN);
-        mBarData.setPaintWidth(5);
-        mBarData.setTextSize(30);
+        mBarData.setPaintWidth(pxTodp(5));
+        mBarData.setTextSize(pxTodp(10));
 
         mDataList.add(mBarData);
     }

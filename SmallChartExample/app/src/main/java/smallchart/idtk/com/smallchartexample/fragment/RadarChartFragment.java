@@ -45,10 +45,10 @@ public class RadarChartFragment extends BaseFragment {
         }
         mRadarData.setValue(radarValue);
         mRadarData.setColor(Color.MAGENTA);
-        mRadarData.setPaintWidth(5);
+        mRadarData.setPaintWidth(pxTodp(3));
         mRadarData2.setValue(radarValue2);
         mRadarData2.setColor(Color.CYAN);
-        mRadarData2.setPaintWidth(5);
+        mRadarData2.setPaintWidth(pxTodp(3));
         radarDataList.add(mRadarData);
         radarDataList.add(mRadarData2);
     }

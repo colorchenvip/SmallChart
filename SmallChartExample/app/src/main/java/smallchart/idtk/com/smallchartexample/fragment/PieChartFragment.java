@@ -34,7 +34,7 @@ public class PieChartFragment extends BaseFragment {
         PieChart pieChart = (PieChart) view.findViewById(R.id.pieChart);
         pieChart.setDataList(mPieDataList);
         pieChart.setAxisColor(Color.WHITE);
-        pieChart.setAxisTextSize(50);
+        pieChart.setAxisTextSize(pxTodp(20));
 
         return view;
     }
