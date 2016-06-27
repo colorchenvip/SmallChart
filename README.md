@@ -96,6 +96,21 @@ combineChart.setDataList(mDataList);
 ```
 ### Data
 ```Java
+
+private CurveData mCurveData = new CurveData();
+private ArrayList<PointF> mPointArrayList1 = new ArrayList<>();
+
+private LineData mLineData = new LineData();
+private ArrayList<PointF> mPointArrayList2 = new ArrayList<>();
+
+private BarData mBarData = new BarData();
+private ArrayList<PointF> mPointArrayList3 = new ArrayList<>();
+
+private ArrayList<IBarLineCurveData> mDataList = new ArrayList<>();
+```
+
+```Java
+
 mBarData.setValue(mPointArrayList3);
 mBarData.setColor(Color.CYAN);
 mBarData.setPaintWidth(pxTodp(5));
@@ -114,6 +129,8 @@ mCurveData.setPaintWidth(pxTodp(3));
 mCurveData.setTextSize(pxTodp(10));
 mDataList.add(mCurveData);
 ```
+
+其他图表示例请查看[Example](https://github.com/Idtk/SmallChart/tree/master/app)
 
 ## License
 ```
