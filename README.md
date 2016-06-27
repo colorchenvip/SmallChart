@@ -9,27 +9,27 @@ SdkVersion >= 19
 ## Chart types
 * Curve Chart(fill)
 
-<img src="https://github.com/Idtk/SmallChart/blob/master/image/curve.png" alt="curve" title="curve"/><br>
+<img src="https://github.com/Idtk/SmallChart/blob/master/image/curve.png" alt="curve" title="curve" width="300"/><br>
 
 * bar Chart
 
-<img src="https://github.com/Idtk/SmallChart/blob/master/image/bar.png" alt="bar" title="bar"/><br>
+<img src="https://github.com/Idtk/SmallChart/blob/master/image/bar.png" alt="bar" title="bar" width="300"/><br>
 
 * Line Chart
 
-<img src="https://github.com/Idtk/SmallChart/blob/master/image/line.png" alt="line" title="line"/><br>
+<img src="https://github.com/Idtk/SmallChart/blob/master/image/line.png" alt="line" title="line" width="300"/><br>
 
 * Combine Chart
 
-<img src="https://github.com/Idtk/SmallChart/blob/master/image/combine.png" alt="combine" title="combine"/><br>
+<img src="https://github.com/Idtk/SmallChart/blob/master/image/combine.png" alt="combine" title="combine" width="300"/><br>
 
 * PieChart
 
-<img src="https://github.com/Idtk/SmallChart/blob/master/image/pie.png" alt="pie" title="pie"/><br>
+<img src="https://github.com/Idtk/SmallChart/blob/master/image/pie.png" alt="pie" title="pie" width="300"/><br>
 
 * RadarChart
 
-<img src="https://github.com/Idtk/SmallChart/blob/master/image/radar.png" alt="radar" title="radar"/><br>
+<img src="https://github.com/Idtk/SmallChart/blob/master/image/radar.png" alt="radar" title="radar" width="300"/><br>
 
 ## Features
 
