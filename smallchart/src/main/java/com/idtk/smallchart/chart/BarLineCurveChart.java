@@ -134,6 +134,10 @@ public abstract class BarLineCurveChart<T extends IBarLineCurveData> extends Cha
         computeYAxis();
     }
 
+    public void setXAxisLabel(ArrayList<String> label) {
+        mXAxisData.setLabel(label);
+    }
+
     /**
      * 动画方法，默认动画时间两秒，生成监听值animatedValue
      * 如果不使用动画，则直接设置监听值为1
@@ -188,7 +192,7 @@ public abstract class BarLineCurveChart<T extends IBarLineCurveData> extends Cha
         convergenceFlag =false;
         Paint paintValue = new Paint();
         int wrapSize;
-        if (mDataList!=null&&mDataList.size()>0){
+        if (mDataList!=null && mDataList.size()>0){
             NumberFormat numberFormat =NumberFormat.getPercentInstance();
             numberFormat.setMinimumFractionDigits(mYAxisData.getDecimalPlaces());
             paintText.setStrokeWidth(mYAxisData.getPaintWidth());
