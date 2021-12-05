@@ -39,7 +39,11 @@ public class PieChartRender extends ChartRender implements TouchListener{
         this.pieAxisData = pieAxisData;
         this.pieData = pieData;
 
+        mPaint.setAntiAlias(true);
+        mPaint.setDither(true);
+        
         paintText.setAntiAlias(true);
+        paintText.setDither(true);
         paintText.setColor(pieAxisData.getColor());
         paintText.setTextSize(pieAxisData.getTextSize());
         paintText.setTextAlign(Paint.Align.CENTER);

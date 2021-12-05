@@ -3,7 +3,7 @@
 [![](https://jitpack.io/v/Idtk/SmallChart.svg)](https://jitpack.io/#Idtk/SmallChart)
 <br>
 ## Introduction
-&nbsp;&nbsp;&nbsp;&nbsp;SmallChart是一个开源的Android图表库，拥有5种不同的图表类型来展示数据。可以通过输入的数据以及可设置的颜色、画笔大小等属性方便的创建图表。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;SmallChart是一个开源的Android图表库，折线图、曲线图(可填充)、柱状图、扇形图、雷达图，共5种图表类型。特色的组合图表可以任意组合折线图、曲线图、柱状图。可以通过输入的数据以及可设置的颜色、画笔大小等属性方便的创建图表。<br>
 
 ## Version
 SdkVersion >= 19
@@ -56,7 +56,7 @@ SdkVersion >= 19
 
 ```
     dependencies {
-	        compile 'com.github.Idtk:SmallChart:v0.1.0'
+	        compile 'com.github.Idtk:SmallChart:v0.1.1'
 	}
 ```
 
@@ -76,7 +76,7 @@ SdkVersion >= 19
     <dependency>
 	    <groupId>com.github.Idtk</groupId>
 	    <artifactId>SmallChart</artifactId>
-	    <version>v0.1.0</version>
+	    <version>v0.1.1</version>
 	</dependency>
 ```
 
@@ -148,3 +148,12 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
+******
+
+## About Me
+
+&nbsp;&nbsp;**博客: www.idtkm.com**<br>
+&nbsp;&nbsp;**GitHub: https://github.com/Idtk**<br>
+&nbsp;&nbsp;**微博: http://weibo.com/Idtk**<br>
+&nbsp;&nbsp;**邮箱: IdtkMa@gmail.com**<br>
+

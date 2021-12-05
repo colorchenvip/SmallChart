@@ -30,6 +30,7 @@ public class CurveChartFragment extends BaseFragment {
     private ArrayList<ICurveData> mDataList = new ArrayList<>();
     private CurveData mCurveData = new CurveData();
     private ArrayList<PointF> mPointArrayList = new ArrayList<>();
+    private ArrayList<String> mStringArrayList = new ArrayList<>();
 
     @Nullable
     @Override
@@ -39,12 +40,14 @@ public class CurveChartFragment extends BaseFragment {
         initData();
 //        curveChart.setData(mCurveData);
         curveChart.setDataList(mDataList);
+        curveChart.setXAxisLabel(mStringArrayList);
         return view;
     }
 
     private void initData() {
         for (int i = 0; i < 8; i++) {
             mPointArrayList.add(new PointF(points[i][0], points[i][1]));
+            mStringArrayList.add("pp" + i);
         }
         mCurveData.setValue(mPointArrayList);
         mCurveData.setColor(Color.RED);

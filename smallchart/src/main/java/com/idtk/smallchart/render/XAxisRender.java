@@ -7,6 +7,7 @@ import android.graphics.PointF;
 import com.idtk.smallchart.interfaces.iData.IXAxisData;
 
 import java.text.NumberFormat;
+import java.util.ArrayList;
 
 /**
  * Created by Idtk on 2016/6/6.
@@ -38,6 +39,7 @@ public class XAxisRender extends AxisRender {
     public void drawGraph(Canvas canvas) {
         canvas.drawLine(0,0,xAxisData.getAxisLength(),0,mPaint);
 
+        ArrayList<String> label = xAxisData.getLabel();
         for (int i=0;(xAxisData.getInterval()*i+xAxisData.getMinimum())<=xAxisData.getMaximum();i++){
             canvas.drawLine((float) (xAxisData.getInterval()*i*xAxisData.getAxisScale()),0,
                     (float) (xAxisData.getInterval()*i*xAxisData.getAxisScale()),
@@ -51,8 +53,9 @@ public class XAxisRender extends AxisRender {
             float TextPathY = (mPaint.descent()+mPaint.ascent())-xAxisData.getAxisLength()/100;
             mPoint.x = TextPathX;
             mPoint.y = -TextPathY;
-            textCenter(new String[]{numberFormat.format(xAxisData.getInterval()*i+xAxisData.getMinimum())},
-                    mPaint,canvas, mPoint, Paint.Align.CENTER);
+            String labelString = numberFormat.format(xAxisData.getInterval()*i+xAxisData.getMinimum());
+            if (label != null) labelString = label.get(i);
+            textCenter(new String[]{labelString}, mPaint,canvas, mPoint, Paint.Align.CENTER);
             canvas.restore();
         }
         /**
